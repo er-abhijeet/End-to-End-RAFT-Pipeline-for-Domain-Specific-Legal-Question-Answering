@@ -35,11 +35,11 @@ const GRAPHS: Array<{ file: string; title: string; caption: string }> = [
     title: "Span F1 score",
     caption: "Token-overlap F1 against the gold answer span, at k = 3.",
   },
-  {
-    file: "ragas_scores.png",
-    title: "Ragas judge scores",
-    caption: "Faithfulness and Answer Relevancy, scored by the teacher model as an independent judge.",
-  },
+  // {
+  //   file: "ragas_scores.png",
+  //   title: "Ragas judge scores",
+  //   caption: "Faithfulness and Answer Relevancy, scored by the teacher model as an independent judge.",
+  // },
 ];
 
 export default async function ResultsPage() {
