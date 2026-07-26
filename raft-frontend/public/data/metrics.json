@@ -1,0 +1,46 @@
+{
+  "columns": [
+    "Base Model (Zero-Shot)",
+    "Base Model + RAG",
+    "Fine-Tuned RAFT Model"
+  ],
+  "rows": [
+    {
+      "metric": "Exact Match @ Rank-1",
+      "Base Model (Zero-Shot)": 0.0,
+      "Base Model + RAG": 0.0,
+      "Fine-Tuned RAFT Model": 0.1
+    },
+    {
+      "metric": "Exact Match @ Rank-3",
+      "Base Model (Zero-Shot)": 0.0,
+      "Base Model + RAG": 0.0,
+      "Fine-Tuned RAFT Model": 0.08
+    },
+    {
+      "metric": "Exact Match @ Rank-5",
+      "Base Model (Zero-Shot)": 0.0,
+      "Base Model + RAG": 0.0,
+      "Fine-Tuned RAFT Model": 0.08
+    },
+    {
+      "metric": "Span F1 Score",
+      "Base Model (Zero-Shot)": 0.1915433782645759,
+      "Base Model + RAG": 0.316905927544119,
+      "Fine-Tuned RAFT Model": 0.3567977463350919
+    },
+    {
+      "metric": "Ragas Faithfulness",
+      "Base Model (Zero-Shot)": null,
+      "Base Model + RAG": null,
+      "Fine-Tuned RAFT Model": null
+    },
+    {
+      "metric": "Ragas Answer Relevancy",
+      "Base Model (Zero-Shot)": null,
+      "Base Model + RAG": null,
+      "Fine-Tuned RAFT Model": null
+    }
+  ],
+  "has_ragas": false
+}

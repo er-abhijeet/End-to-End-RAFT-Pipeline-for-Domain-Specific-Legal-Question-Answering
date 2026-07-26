@@ -2,7 +2,10 @@ import type { MetricsJson } from "@/lib/data";
 
 function fmt(v: string | number | null) {
   if (v === null || v === undefined) return "—";
-  if (typeof v === "number") return v.toFixed(3);
+  if (typeof v === "number") {
+    if (Number.isNaN(v)) return "—";
+    return v.toFixed(3);
+  }
   return v;
 }
 

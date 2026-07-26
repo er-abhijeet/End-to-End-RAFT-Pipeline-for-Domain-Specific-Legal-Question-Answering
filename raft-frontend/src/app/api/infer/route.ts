@@ -1,4 +1,4 @@
-const DEFAULT_SPACE_URL = "https://abhifdsdf-qwen-cuad-raft.hf.space";
+const DEFAULT_SPACE_URL = "https://abhifdsdf-cuad-raft.hf.space";
 const DEFAULT_API_NAME = "predict";
 
 type CallResponse = { event_id?: string; detail?: string };

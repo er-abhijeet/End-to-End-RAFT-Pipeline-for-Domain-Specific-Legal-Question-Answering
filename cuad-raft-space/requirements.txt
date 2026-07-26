@@ -1,0 +1,5 @@
+gradio
+llama-cpp-python==0.3.34
+huggingface-hub
+fastapi
+pydantic
