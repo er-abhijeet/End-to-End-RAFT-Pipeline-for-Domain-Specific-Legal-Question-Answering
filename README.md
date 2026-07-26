@@ -4,8 +4,8 @@
 </picture>
 
 <p align="center">
-  <a href="https://huggingface.co/spaces/abhifdsdf/cuad-raft"><strong>🤗 Live Demo</strong></a> ·
-  <a href="https://cuad-raft.vercel.app"><strong>🌐 Showcase Site</strong></a> ·
+  <a href="https://raft.snorlax.codes"><strong>🤗 Live Demo</strong></a> ·
+  <a href="https://raft.snorlax.codes"><strong>🌐 Showcase Site</strong></a> ·
   <a href="https://huggingface.co/datasets/abhifdsdf/cuad-raft-showcase-assets"><strong>📊 Assets & Graphs</strong></a> ·
   <a href="https://huggingface.co/abhifdsdf/qwen2.5-3b-cuad-raft-gguf"><strong>🧠 GGUF Model</strong></a>
 </p>
@@ -222,7 +222,7 @@ Evaluation metrics:
 The fine-tuned model is deployed as:
 
 1. **🤗 [Hugging Face Space](https://huggingface.co/spaces/abhifdsdf/cuad-raft)** — Interactive Gradio app with chat interface, single-question mode, and REST API
-2. **🌐 [Next.js Showcase](https://cuad-raft.vercel.app)** — Full-featured frontend with results, graphs, side-by-side comparisons, and live inference
+2. **🌐 [Next.js Showcase](https://raft.snorlax.codes)** — Full-featured frontend with results, graphs, side-by-side comparisons, and live inference
 3. **🧠 [GGUF on Hub](https://huggingface.co/abhifdsdf/qwen2.5-3b-cuad-raft-gguf)** — Quantized 4-bit GGUF model for local use with `llama.cpp`
 
 ### Gradio Space Features
@@ -296,8 +296,8 @@ llama-cli -m ./models/qwen-cuad-raft-q4_k_m.gguf \
 
 | Resource | URL |
 |----------|-----|
-| 🤗 Live Demo (Gradio) | [https://huggingface.co/spaces/abhifdsdf/cuad-raft](https://huggingface.co/spaces/abhifdsdf/cuad-raft) |
-| 🌐 Showcase Frontend | [https://cuad-raft.vercel.app](https://cuad-raft.vercel.app) |
+| 🤗 Live Demo (Gradio) | [https://raft.snorlax.codes](https://raft.snorlax.codes) |
+| 🌐 Showcase Frontend | [https://raft.snorlax.codes](https://raft.snorlax.codes) |
 | 🧠 GGUF Model | [https://huggingface.co/abhifdsdf/qwen2.5-3b-cuad-raft-gguf](https://huggingface.co/abhifdsdf/qwen2.5-3b-cuad-raft-gguf) |
 | 📊 Graphs & Data | [https://huggingface.co/datasets/abhifdsdf/cuad-raft-showcase-assets](https://huggingface.co/datasets/abhifdsdf/cuad-raft-showcase-assets) |
 | 📓 Final Notebook | [final-notebook.ipynb](final-notebook.ipynb) |
