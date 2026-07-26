@@ -1,0 +1,105 @@
+@import "tailwindcss";
+
+:root {
+  --color-ink: #0d0f14;
+  --color-ink-2: #161a22;
+  --color-paper: #f6f3ea;
+  --color-paper-dim: #e9e4d4;
+  --color-redline: #b8402f;
+  --color-redline-bright: #d4573f;
+  --color-gold: #e3b23c;
+  --color-teal: #3f9d94;
+  --color-text: #ece8dd;
+  --color-text-dim: #9a9da8;
+  --color-grid: #262b35;
+
+  --font-display: "Fraunces", ui-serif, Georgia, serif;
+  --font-body: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", monospace;
+}
+
+@theme inline {
+  --color-ink: var(--color-ink);
+  --color-ink-2: var(--color-ink-2);
+  --color-paper: var(--color-paper);
+  --color-paper-dim: var(--color-paper-dim);
+  --color-redline: var(--color-redline);
+  --color-redline-bright: var(--color-redline-bright);
+  --color-gold: var(--color-gold);
+  --color-teal: var(--color-teal);
+  --color-text: var(--color-text);
+  --color-text-dim: var(--color-text-dim);
+  --color-grid: var(--color-grid);
+  --font-display: var(--font-display);
+  --font-body: var(--font-body);
+  --font-mono: var(--font-mono);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-ink);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  background-image:
+    linear-gradient(var(--color-grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--color-grid) 1px, transparent 1px);
+  background-size: 64px 64px;
+  background-position: center top;
+  background-attachment: fixed;
+}
+
+::selection {
+  background: var(--color-redline);
+  color: var(--color-paper);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Signature element: a redline margin annotation, evoking contract markup */
+.redline-note {
+  position: relative;
+  padding-left: 1.1rem;
+  border-left: 2px solid var(--color-redline);
+}
+
+.redline-note::before {
+  content: "▲";
+  position: absolute;
+  left: -0.52rem;
+  top: -0.1rem;
+  font-size: 0.7rem;
+  color: var(--color-redline-bright);
+  background: var(--color-ink);
+}
+
+.paper-card {
+  background: var(--color-paper);
+  color: #191510;
+  border-radius: 2px;
+}
+
+.clause-number {
+  font-family: var(--font-mono);
+  color: var(--color-gold);
+  letter-spacing: 0.02em;
+}
