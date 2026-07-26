@@ -34,7 +34,7 @@ export default function InferencePage() {
       });
       const json = await res.json();
       if (!res.ok) {
-        setError(json.error || "Something went wrong.");
+        setError(("Looks like the HF Inference Space is Down. " + json.error )|| "Something went wrong.");
       } else {
         setAnswer(String(json.answer ?? ""));
       }
